@@ -92,7 +92,7 @@ if __name__ == "__main__":
     ##############################################################################
     incoming_telegram_download_handler = MessageHandler(
         down_load_media_f,
-        filters=filters.command([TELEGRAM_LEECH_COMMAND, TELEGRAM_LEECH_UNZIP_COMMAND])
+        filters=filters.command([TELEGRAM_LEECH_UNZIP_COMMAND, TELEGRAM_LEECH_COMMAND])
         & filters.chat(chats=AUTH_CHANNEL),
     )
     app.add_handler(incoming_telegram_download_handler)
@@ -133,6 +133,13 @@ if __name__ == "__main__":
     incoming_youtube_playlist_dl_handler = MessageHandler(
         g_yt_playlist,
         filters=filters.command([PYTDL_COMMAND, GPYTDL_COMMAND])
+        & filters.chat(chats=AUTH_CHANNEL),
+    )
+    app.add_handler(incoming_youtube_playlist_dl_handler)
+    ##############################################################################
+    incoming_youtube_playlist_dl_handler = MessageHandler(
+        g_yt_playlist,
+        filters=filters.command([f"{PYTDL_COMMAND}"])
         & filters.chat(chats=AUTH_CHANNEL),
     )
     app.add_handler(incoming_youtube_playlist_dl_handler)
