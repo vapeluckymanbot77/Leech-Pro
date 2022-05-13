@@ -14,7 +14,7 @@ from tobrot import (
     GLEECH_COMMAND,
     GLEECH_UNZIP_COMMAND,
     GLEECH_ZIP_COMMAND,
-    LEECH_COMMAND,
+    MIRROR_COMMAND,
     LEECH_UNZIP_COMMAND,
     LEECH_ZIP_COMMAND,
     LOGGER,
@@ -69,7 +69,7 @@ async def incoming_message_f(client, message):
             LOGGER.info(dl_url)
             LOGGER.info(cf_name)
         else:
-            if user_command == LEECH_COMMAND.lower():
+            if user_command == MIRROR_COMMAND.lower():
                 await i_m_sefg.edit("No download source provided 🙄")
                 return
             is_file = True

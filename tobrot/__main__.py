@@ -23,7 +23,7 @@ from tobrot import (
     GLEECH_COMMAND,
     GLEECH_UNZIP_COMMAND,
     GLEECH_ZIP_COMMAND,
-    LEECH_COMMAND,
+    MIRROR_COMMAND,
     LEECH_UNZIP_COMMAND,
     LEECH_ZIP_COMMAND,
     LOG_COMMAND,
@@ -78,7 +78,7 @@ if __name__ == "__main__":
         incoming_message_f,
         filters=filters.command(
             [
-                LEECH_COMMAND,
+                MIRROR_COMMAND,
                 LEECH_UNZIP_COMMAND,
                 LEECH_ZIP_COMMAND,
                 GLEECH_COMMAND,
