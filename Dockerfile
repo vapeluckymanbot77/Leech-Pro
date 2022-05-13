@@ -5,7 +5,6 @@ RUN mkdir ./app
 RUN chmod 777 ./app
 WORKDIR /app
 
-ENV TZ=Asia/Kolkata
 
 RUN apt-get -y update && DEBIAN_FRONTEND="noninteractive" \
     apt -qq update --fix-missing && \
