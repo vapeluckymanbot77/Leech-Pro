@@ -52,7 +52,7 @@ async def incoming_purge_message_f(client, message):
 
 async def incoming_message_f(client, message):
     """/leech command or /gleech command"""
-    user_command = message.command[0]
+    user_command = LEECH_COMMAND.lower():
     g_id = message.from_user.id
     # get link from the incoming message
     i_m_sefg = await message.reply_text("Processing...", quote=True)
