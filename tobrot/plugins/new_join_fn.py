@@ -49,7 +49,7 @@ Syntax:- `[ID of the file or folder][one space][name of your folder only(If the 
  
 /{GPYTDL_COMMAND}: This download youtube playlist and upload to your cloud.
  
-/{LEECH_COMMAND}: This command should be used as reply to a magnetic link, a torrent link, or a direct link. [this command will SPAM the chat and send the downloads a seperate files, if there is more than one file, in the specified torrent]
+/{MIRROR_COMMAND}: This command should be used as reply to a magnetic link, a torrent link, or a direct link. [this command will SPAM the chat and send the downloads a seperate files, if there is more than one file, in the specified torrent]
  
 /{LEECH_ZIP_COMMAND}: This command should be used as reply to a magnetic link, a torrent link, or a direct link. [This command will create a .tar.gz file of the output directory, and send the files in the chat, splited into PARTS of 1024MiB each, due to Telegram limitations]
  
