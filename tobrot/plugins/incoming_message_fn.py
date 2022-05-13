@@ -22,7 +22,6 @@ from tobrot import (
     GPYTDL_COMMAND,
     PYTDL_COMMAND,
 )
-from tobrot import *
 from tobrot.helper_funcs.admin_check import AdminCheck
 from tobrot.helper_funcs.cloneHelper import CloneHelper
 from tobrot.helper_funcs.download import download_tg
@@ -52,7 +51,7 @@ async def incoming_purge_message_f(client, message):
 
 async def incoming_message_f(client, message):
     """/leech command or /gleech command"""
-    user_command = LEECH_COMMAND.lower():
+    user_command = message.command[0]
     g_id = message.from_user.id
     # get link from the incoming message
     i_m_sefg = await message.reply_text("Processing...", quote=True)
