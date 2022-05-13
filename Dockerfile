@@ -35,6 +35,7 @@ RUN chmod 0775 /app/gautam/gclone
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install hachoir
 COPY . .
 RUN chmod +x extract
 CMD ["bash","start.sh"]
