@@ -23,10 +23,7 @@ RUN apt-get -y update && DEBIAN_FRONTEND="noninteractive" \
     p7zip-rar
 
 
-RUN locale-gen en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
+ENV LANG="en_US.UTF-8" LANGUAGE="en_US:en"
 
 RUN wget https://rclone.org/install.sh
 RUN bash install.sh
