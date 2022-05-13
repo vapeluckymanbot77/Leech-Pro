@@ -2,31 +2,7 @@ import logging
 
 import pyrogram
 from tobrot import *
-from tobrot import (
-    DOWNLOAD_LOCATION,
-    GLEECH_COMMAND,
-    GLEECH_UNZIP_COMMAND,
-    GLEECH_ZIP_COMMAND,
-    LEECH_COMMAND,
-    LEECH_UNZIP_COMMAND,
-    LEECH_ZIP_COMMAND,
-    LOGGER,
-    YTDL_COMMAND,
-    GPYTDL_COMMAND,
-    PYTDL_COMMAND,
-)
-from tobrot.helper_funcs.admin_check import AdminCheck
-from tobrot.helper_funcs.cloneHelper import CloneHelper
-from tobrot.helper_funcs.download import download_tg
-from tobrot.helper_funcs.download_aria_p_n import (
-    aria_start,
-    call_apropriate_function,
-)
-from tobrot.helper_funcs.download_from_link import request_download
-from tobrot.helper_funcs.extract_link_from_message import extract_link
-from tobrot.helper_funcs.upload_to_tg import upload_to_tg
-from tobrot.helper_funcs.youtube_dl_extractor import extract_youtube_dl_formats
-from tobrot.helper_funcs.ytplaylist import yt_playlist_downg
+
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -79,7 +55,7 @@ Syntax:- `[ID of the file or folder][one space][name of your folder only(If the 
  
 /{GLEECH_COMMAND}: This command should be used as reply to a magnetic link, a torrent link, or a direct link. And this will download the files from the given link or torrent and will upload to the cloud using rclone.
  
-/{GLEECH_ZIP_COMMAND}: This command will compress the folder/file and will upload to your cloud.
+/{GLEECH_ZIP_COMMAND} This command will compress the folder/file and will upload to your cloud.
  
 /{LEECH_UNZIP_COMMAND}: This will unarchive file and upload to telegram.
  

@@ -22,6 +22,7 @@ from tobrot import (
     GPYTDL_COMMAND,
     PYTDL_COMMAND,
 )
+from tobrot import *
 from tobrot.helper_funcs.admin_check import AdminCheck
 from tobrot.helper_funcs.cloneHelper import CloneHelper
 from tobrot.helper_funcs.download import download_tg

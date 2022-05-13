@@ -7,7 +7,7 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from PIL import Image
 from tobrot import DOWNLOAD_LOCATION
-
+from tobrot import *
 
 async def save_thumb_nail(client, message):
     thumbnail_location = os.path.join(DOWNLOAD_LOCATION, "thumbnails")
