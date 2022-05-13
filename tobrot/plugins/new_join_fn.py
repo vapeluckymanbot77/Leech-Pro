@@ -79,7 +79,7 @@ Syntax:- `[ID of the file or folder][one space][name of your folder only(If the 
  
 /{GLEECH_COMMAND}: This command should be used as reply to a magnetic link, a torrent link, or a direct link. And this will download the files from the given link or torrent and will upload to the cloud using rclone.
  
-/{GLEECH_ZIP_COMMAND} This command will compress the folder/file and will upload to your cloud.
+/{GLEECH_ZIP_COMMAND}: This command will compress the folder/file and will upload to your cloud.
  
 /{LEECH_UNZIP_COMMAND}: This will unarchive file and upload to telegram.
  
