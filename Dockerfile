@@ -1,8 +1,8 @@
 FROM ubuntu:22.04
 
-WORKDIR /usr/src/app
-SHELL ["/bin/bash", "-c"]
-RUN chmod 777 /usr/src/app
+RUN mkdir ./app
+RUN chmod 777 ./app
+WORKDIR /app
 
 RUN apt-get -y update && DEBIAN_FRONTEND="noninteractive" \
     apt-get install -y python3 python3-pip aria2 qbittorrent-nox \
